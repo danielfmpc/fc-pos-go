@@ -1,14 +1,14 @@
 package math
 
-type Math struct {
+type math struct {
 	a int
 	b int
 }
 
-func NewMath(a, b int) *Math {
-	return &Math{a: a, b: b}
+func NewMath(a, b int) *math {
+	return &math{a: a, b: b}
 }
 
-func (m *Math) Add() int {
+func (m *math) Add() int {
 	return m.a + m.b
 }
