@@ -1,6 +1,8 @@
 ---
+trigger: always_on
 description: Regras para gerar mensagens de commit
 ---
+
 Sempre que for solicitado a sugerir ou gerar uma mensagem de commit (mesmo implicitamente):
 
 1. **Formato**: Use o formato Conventional Commits: `<tipo>(<escopo>): <descrição breve>`.
