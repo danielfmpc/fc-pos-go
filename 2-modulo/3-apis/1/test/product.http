@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:8080
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbEBkYW5pZWwuY29tIiwiZXhwIjoxNzczNjE3OTU2LCJpZCI6IjI1NDQxYzYwLTBlZTEtNDJlNS04NjdmLTRlMTI3YWMxYWJhNCIsIm5hbWUiOiJEYW5pZWwifQ.LqyMnj6j0mnBa0uDtTEz0qUAuGX8dhd9E1jjpugIAdw
+
+POST {{baseUrl}}/products
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "price": 10.0
+}
+
+###
+GET {{baseUrl}}/products/ef57656f-a1b9-4032-abd4-fbee46157bd9
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+PUT {{baseUrl}}/products/ef57656f-a1b9-4032-abd4-fbee46157bd9
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "Product 2",
+    "price": 20.0
+}
+
+###
+DELETE {{baseUrl}}/products/ef57656f-a1b9-4032-abd4-fbee46157bd9
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+###
+GET {{baseUrl}}/products?page=1&limit=10&sort=asc
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+GET {{baseUrl}}/products
+Authorization: Bearer {{token}}
+Content-Type: application/json
