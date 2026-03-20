@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:8000
+@CEP = 23058230
+
+GET {{baseUrl}}/cep/{{CEP}}
+
+###
+GET {{baseUrl}}/brasilapi/{{CEP}}
+
+###
+GET {{baseUrl}}/viacep/{{CEP}}
+
+###
+GET {{baseUrl}}/timeout/{{CEP}}
