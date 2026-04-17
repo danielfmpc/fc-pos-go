@@ -1,0 +1,8 @@
+# Gera os arquivos .pb.go
+protoc --go_out=. --go-grpc_out=. .\proto\course_category.proto
+
+# Inicia o Evans
+evans -r repl
+
+# Inicia o servidor
+go run cmd/main.go
